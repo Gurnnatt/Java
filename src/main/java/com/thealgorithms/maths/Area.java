@@ -78,7 +78,7 @@ public final class Area {
      */
     public static double surfaceAreaPyramid(final double sideLength, final double slantHeight) {
         if (sideLength <= 0) {
-            throw new IllegalArgumentException("");
+            throw new IllegalArgumentException("Must be a positive sideLength");
         }
         if (slantHeight <= 0) {
             throw new IllegalArgumentException("slant height must be greater than 0");
@@ -138,7 +138,7 @@ public final class Area {
     /**
      * Calculate the area of a triangle.
      *
-     * @param base   base of triangle
+     * @param baseLength   base of triangle
      * @param height height of triangle
      * @return area of given triangle
      */
@@ -155,7 +155,7 @@ public final class Area {
     /**
      * Calculate the area of a parallelogram.
      *
-     * @param base   base of a parallelogram
+     * @param baseLength   base of a parallelogram
      * @param height height of a parallelogram
      * @return area of given parallelogram
      */
@@ -172,8 +172,8 @@ public final class Area {
     /**
      * Calculate the area of a trapezium.
      *
-     * @param base1  upper base of trapezium
-     * @param base2  bottom base of trapezium
+     * @param baseLength1  upper base of trapezium
+     * @param baseLength2  bottom base of trapezium
      * @param height height of trapezium
      * @return area of given trapezium
      */
